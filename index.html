@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YaarCookKya?</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- tailwind/DaisyUI  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Remix  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- nav bar start -->
+    <nav>
+      <div class="nav-main">
+        <div class="navbar bg-base-100 shadow-sm">
+          <div class="navbar-start">
+            <a href="index.html"
+              ><img src="./images/nav logo.png" alt="" class="nav-img"
+            /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn">Button</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav bar end  -->
+
+    <!-- Slider start -->
+    <div class="carousel w-full">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="./images/slider1.png" class="w-full h-150 sliderimg" />
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-black/30 backdrop-blur-[2px] z-10"
+        >
+          <h1
+            class="text-white text-4xl md:text-6xl font-bold text-center px-4"
+          >
+            Your Ingredients, Our Recipes
+          </h1>
+        </div>
+
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-20"
+        >
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="./images/slider2.png" class="w-full h-150 sliderimg" />
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-black/30 backdrop-blur-[2px] z-10"
+        >
+          <h1
+            class="text-white text-4xl md:text-6xl font-bold text-center px-4"
+          >
+            Jo Hai Ghar Mein, Wohi Hai Khaas
+          </h1>
+        </div>
+
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-20"
+        >
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="./images/slider3.png" class="w-full h-150 sliderimg" />
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-black/30 backdrop-blur-[2px] z-10"
+        >
+          <h1
+            class="text-white text-4xl md:text-6xl font-bold text-center px-4"
+          >
+            Tandoori Tech for Your Tastebuds
+          </h1>
+        </div>
+
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-20"
+        >
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="./images/slider4.png" class="w-full h-150 sliderimg" />
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-black/30 backdrop-blur-[2px] z-10"
+        >
+          <h1
+            class="text-white text-4xl md:text-6xl font-bold text-center px-4"
+          >
+            Desi Recipes. Zero Guesswork.
+          </h1>
+        </div>
+
+        <div
+          class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-20"
+        >
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+    <!-- Slider end -->
+
+    <!-- About start -->
+    <div class="hero bg-base-200 min-h-150">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">Yaar, Cook Kya?</h1>
+          <p class="py-6">
+            Got tomatoes, onions, and rice? We’ll tell you what to cook!
+            Discover delicious desi recipes based on the ingredients you already
+            have.
+          </p>
+          <button class="btn btn-primary">Find Recipes</button>
+        </div>
+      </div>
+    </div>
+    <!-- About end -->
+
+    <!-- Ing picker start -->
+    <main class="flex justify-center bg-base-200 pb-40">
+      <form id="ingredient-form" class="grid grid-cols-1 gap-3">
+        <h1 class="text-2xl">What ingredients do you have?</h1>
+        <input
+          id="ing1"
+          type="text"
+          placeholder="Ingredient 1"
+          class="input input-lg border border-black"
+        />
+        <input
+          id="ing2"
+          type="text"
+          placeholder="Ingredient 2"
+          class="input input-lg border border-black"
+        />
+        <input
+          id="ing3"
+          type="text"
+          placeholder="Ingredient 3"
+          class="input input-lg border border-black"
+        />
+        <button type="submit" class="btn border border-black w-80">Find Recipes</button>
+
+      </form>
+
+      <!-- Result Section -->
+      <div
+        id="recipe-result"
+        class="mt-6 text-center text-xl font-medium"
+      ></div>
+    </main>
+
+    <!-- Ing picker end -->
+
+    <!-- Contact Start  -->
+    <section class="bg-base-200 py-10">
+      <div class="max-w-md mx-auto px-4 text-center">
+        <h2
+          class="text-3xl font-bold mb-6 flex items-center justify-center gap-2"
+        >
+          <span><i class="ri-mail-line"></i></span>
+          <span>Contact Us</span>
+        </h2>
+
+        <form class="space-y-4 text-left">
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Name</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Your name"
+              class="input input-bordered w-full"
+            />
+          </div>
+
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Email</span>
+            </label>
+            <input
+              type="email"
+              placeholder="your@email.com"
+              class="input input-bordered w-full"
+            />
+          </div>
+
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Message</span>
+            </label>
+            <textarea
+              class="textarea textarea-bordered w-full"
+              placeholder="Your message here"
+            ></textarea>
+          </div>
+
+          <div class="form-control text-center">
+            <button class="btn btn-primary w-full md:w-auto">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <footer
+      class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10"
+    >
+      <nav class="grid grid-flow-col gap-4">
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+      </nav>
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              ></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path>
+            </svg>
+          </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+      <aside>
+        <p>
+          Copyright © <span id="current-year"></span> - All rights reserved by
+          YaarCookKya?
+        </p>
+      </aside>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
