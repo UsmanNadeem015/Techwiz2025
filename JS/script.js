@@ -46,6 +46,22 @@ $("#ingredient-form").submit(function(e){
       return;
     }
 
+  // Clear previous results
+        resultDiv.empty();
+  // Find matching recipes
+        const matchingRecipes = recipes.filter(recipe => {
+            return userIngredients.every(ingredient => recipe.ingredients.includes(ingredient));
+        });
+        // Display results
+        if (matchingRecipes.length > 0) {
+            matchingRecipes.forEach(recipe => {
+                resultDiv.append(`<p>${recipe.name}</p>`);
+            });
+        } else {
+            resultDiv.html("❌ No recipes found with the given ingredients.");
+        }
+
+
 
 })
 
